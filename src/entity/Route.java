@@ -1,94 +1,39 @@
 package entity;
 
-public class Route {
-  private int routeID;
-  private int userID;
-  private char
-      routeID integer not null auto_increment,
-    userID integer,
-    mytime time,
-    destination varchar(20) not null,
-    cost integer,
-    coverPath varchar(50),
-    tag varchar(100),
-    title varchar(50),
-    score real,
-    primary key(routeID),
-    foreign key (userId) references users(userId)
-package entity;
-
 import java.sql.Date;
 
-/**
- * Created by m on 2015/6/6.
- */
-public class User {
-	private int userID;
-	private String email;
-	private String phoneNum;
-	private String username;
-	private String password;
-	private String profileURL;
-	private String intro;
-	private Date birthday;
-	private int followerCount;
-	private int followingCount;
+public class Route {
+  	private int routeID;
+  	private int userID;
+  	private String mytime;
+  	private String destination;
+  	private int cost;
+  	private String coverPath;
+  	private String tag;
+  	private String title;
+  	private float score;
 
-
-	public User(int userID, String email, String phoneNum, String username,
-			String password, String profileURL, String intro, Date birthday,
-			int followerCount, int followingCount) {
+	public Route(int routeID, int userID, String mytime, String destination,
+			int cost, String coverPath, String tag, String title,
+			float score) {
 		super();
+		this.routeID = routeID;
 		this.userID = userID;
-		this.email = email;
-		this.phoneNum = phoneNum;
-		this.username = username;
-		this.password = password;
-		this.profileURL = profileURL;
-		this.intro = intro;
-		this.birthday = birthday;
-		this.followerCount = followerCount;
-		this.followingCount = followingCount;
+		this.mytime = mytime;
+		this.destination = destination;
+		this.cost = cost;
+		this.coverPath = coverPath;
+		this.tag = tag;
+		this.title = title;
+		this.score = score;
 	}
 
-	public String getIntro() {
-		return intro;
+	public int getRouteID() {
+		return routeID;
 	}
 
-	public void setIntro(String intro) {
-		this.intro = intro;
-	}
-
-	public String getPassword() {
-		return password;
-	}
-
-	public void setPassword(String password) {
-		this.password = password;
-	}
-
-	public String getPhoneNum() {
-		return phoneNum;
-	}
-
-	public void setPhoneNum(String phoneNum) {
-		this.phoneNum = phoneNum;
-	}
-
-	public String getProfileURL() {
-		return profileURL;
-	}
-
-	public void setProfileURL(String profileURL) {
-		this.profileURL = profileURL;
-	}
-
-	public Date getBirthday() {
-		return birthday;
-	}
-
-	public void setBirthday(Date birthday) {
-		this.birthday = birthday;
+	public void setRouteID(int routeID) {
+		this.routeID = routeID;
 	}
 
 	public int getUserID() {
@@ -99,39 +44,59 @@ public class User {
 		this.userID = userID;
 	}
 
-	public String getEmail() {
-		return email;
+	public String getDestination() {
+		return destination;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setDestination(String destination) {
+		this.destination = destination;
 	}
 
-	public String getUsername() {
-		return username;
+	public String getMytime() {
+		return mytime;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+	public void setMytime(String mytime) {
+		this.mytime = mytime;
 	}
 
-	public int getFollowerCount() {
-		return followerCount;
+	public int getCost() {
+		return cost;
 	}
 
-	public void setFollowerCount(int followerCount) {
-		this.followerCount = followerCount;
+	public void setCost(int cost) {
+		this.cost = cost;
 	}
 
-	public int getFollowingCount() {
-		return followingCount;
+	public String getCoverPath() {
+		return coverPath;
 	}
 
-	public void setFollowingCount(int followingCount) {
-		this.followingCount = followingCount;
+	public void setCoverPath(int coverPath) {
+		this.coverPath = coverPath;
 	}
 
-	
-}
+	public String getTag() {
+		return tag;
+	}
 
+	public void setTag(String etag) {
+		this.tag = tag;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public float getScore() {
+		return score;
+	}
+
+	public void setScore(float score) {
+		this.score = score;
+	}
 }
