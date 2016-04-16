@@ -1,7 +1,6 @@
 package entity;
 
 import java.sql.Date;
-import java.util.List;
 
 /**
  * Created by m on 2015/6/6.
@@ -17,7 +16,6 @@ public class User {
 	private Date birthday;
 	private int followerCount;
 	private int followingCount;
-	private List<User> follower;
 
 
 	public User(int userID, String email, String phoneNum, String username,
@@ -116,13 +114,5 @@ public class User {
 		this.followingCount = followingCount;
 	}
 
-	public List<User> getFollower() {
-		return follower;
-	}
-
-	public void setFollower(List<User> follower) {
-		this.follower = follower;
-	}
-	
 	
 }
