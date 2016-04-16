@@ -10,9 +10,9 @@ public class Plan {
 	private String content;
 	private String coverPath;
 	private String destination;
-    	private String title;
-    	private int maxPeople;
-    	private int havingPeople;
+    private String title;
+    private int maxPeople;
+    private int havingPeople;
 	private int mylike;
 	
 	public Plan(int planID, Date mytime_start, Date mytime_end, int cost, String content, String coverPath,
@@ -35,7 +35,7 @@ public class Plan {
 		return planID;
 	}	
 
-	public void setPlanID(String planID) {
+	public void setPlanID(int planID) {
 		this.planID = planID;
 	}
 
@@ -64,7 +64,7 @@ public class Plan {
 	}
 
 	public String getContent() {
-		return birthday;
+		return content;
 	}
 
 	public void setContent(String content) {
@@ -107,6 +107,10 @@ public class Plan {
 		return havingPeople;
 	}
 
+	public int getMylike(){
+		return mylike;
+	}
+	
 	public void setMylike(int mylike) {
 		this.mylike = mylike;
 	}
