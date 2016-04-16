@@ -11,24 +11,45 @@ public class User {
 	private String email;
 	private String phoneNum;
 	private String username;
+	private String password;
 	private String profileURL;
+	private String intro;
 	private Date birthday;
 	private int followerCount;
 	private int followingCount;
 	private List<User> follower;
 
+
 	public User(int userID, String email, String phoneNum, String username,
-			String profileURL, Date birthday, int followerCount,
-			int followingCount) {
+			String password, String profileURL, String intro, Date birthday,
+			int followerCount, int followingCount) {
 		super();
 		this.userID = userID;
 		this.email = email;
 		this.phoneNum = phoneNum;
 		this.username = username;
+		this.password = password;
 		this.profileURL = profileURL;
+		this.intro = intro;
 		this.birthday = birthday;
 		this.followerCount = followerCount;
 		this.followingCount = followingCount;
+	}
+
+	public String getIntro() {
+		return intro;
+	}
+
+	public void setIntro(String intro) {
+		this.intro = intro;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 	public String getPhoneNum() {
