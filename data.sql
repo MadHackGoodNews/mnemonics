@@ -36,7 +36,7 @@ drop table if exists route;
 create table route(
     routeID integer not null auto_increment,
     userID integer,
-    mytime time,
+    mytime varchar(20),
     destination varchar(20) not null,
     cost integer,
     coverPath varchar(50),
