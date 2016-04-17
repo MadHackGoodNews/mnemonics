@@ -17,7 +17,7 @@ public class Comment {
       return commentID;
     }
     
-    public void setCommentID(commentID){
+    public void setCommentID(int commentID){
       this.commentID = commentID;
     }
     

@@ -72,7 +72,7 @@ public class Route {
 		return coverPath;
 	}
 
-	public void setCoverPath(int coverPath) {
+	public void setCoverPath(String coverPath) {
 		this.coverPath = coverPath;
 	}
 
