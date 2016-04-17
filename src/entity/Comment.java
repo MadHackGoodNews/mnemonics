@@ -4,9 +4,9 @@ public class Comment {
     private int commentID;
     private String mytime;
     private String content;
-    private int score;
+    private double score;
     
-    public Comment (int commentID, String mytime, String content, int score){
+    public Comment (int commentID, String mytime, String content, double score){
       this.commentID = commentID;
       this.mytime = mytime;
       this.content = content;
@@ -25,7 +25,7 @@ public class Comment {
       return mytime;
     }
     
-    public void setMytime(mytime){
+    public void setMytime(String mytime){
       this.mytime = mytime;
     }
     
@@ -33,15 +33,15 @@ public class Comment {
       return content;
     }
     
-    public void setContent(content){
+    public void setContent(String content){
       this.content = content;
     }
     
-    public int getScore(){
+    public double getScore(){
       return score;
     }
     
-    public void setScore(score){
+    public void setScore(double score){
       this.score = score;
     }
 }
